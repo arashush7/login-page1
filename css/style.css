@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* center body */
+body {
+    background-color: #e8e8e8;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input:focus,input:active{
+    outline: 0;
+}
+.circle_1{
+    width: 1000px;
+    height: 1000px;
+    position: fixed;
+    background-image: linear-gradient(to right,#94a3c2,#596888);
+    z-index: -1;
+    border-radius: 100%;
+    left: -9rem;
+    top: 54%;
+    transform: translateY(-38%);
+
+}
+
+.login_page {
+    /* background-color: orange; */
+    width: 81%;
+    height: 600px;
+    max-width: 1200px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    overflow: hidden;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+.login_page form {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: blur(22px);
+}
+
+.button-form {
+    width: 50%;
+}
+.button-form button {
+    border: none;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    height: 45px;
+    margin-bottom: 2rem;
+}
+.create-account a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.login-img {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+} 
+.login-img img {
+    object-fit: cover;
+}
+
+.login_page form h1 {
+    display: flex;
+    margin-bottom: 3.2rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.form-group label {
+    display: flex;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    padding-left: 12px;
+}
+
+.form-group input {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background-color: transparent;
+    height: 45px;
+}
+
+
+@media screen and (max-width:768px) {
+    .login-img{
+        display: none;
+    }
+    .login_page form {
+        width: 100%;
+    }
+    .form-group ,.button-form {
+        width: 80%;
+    }
+}
